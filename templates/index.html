@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCII Live Camera</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>ASCII Live Camera</h1>
+    <div class="ascii-container">
+        <pre id="asciiDiv"></pre>
+    </div>
+    <div class="buttons">
+        <button class="btn" id="captureBtn">Capture Image</button>
+        <button class="btn" id="recordBtn">Record Video</button>
+    </div>
+    <video id="video" autoplay></video>
+    <div class="note">Captured ASCII will download, Enjoy using ascii.</div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
